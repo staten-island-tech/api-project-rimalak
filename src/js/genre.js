@@ -1,4 +1,4 @@
-const genres = [
+/*const genres = [
   {
     id: 28,
     name: "Action",
@@ -76,4 +76,4 @@ const genres = [
     name: "Western",
   },
 ];
-export { genres };
+export { genres };*/
