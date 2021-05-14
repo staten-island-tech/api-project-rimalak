@@ -1,7 +1,7 @@
 import { DOMSelectors } from "./DOM";
 //import { genres } from "./genre";
 
-const query = async function () {
+/*const query = async function () {
   try {
     const response = await fetch(
       `https://sports.api.decathlon.com/sports/${id}`
@@ -11,4 +11,4 @@ const query = async function () {
     console.log(error);
     alert("Something got messed up.");
   }
-};
+};*/
