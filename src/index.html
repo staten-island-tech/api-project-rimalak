@@ -11,12 +11,15 @@
   </head>
   <body>
     <h1 class="header">Sports Database</h1>
-    <h2 class="top-rated">Popular Sports</h2>
+    <form id="form"> 
+      <input type="search" id="query" name="q" placeholder="Search...">
+      <button>Search</button>
+    </form>
     <section class="sport-grid">
-       <!--<div class="sport-card">
+       <div class="sport-card">
         <div class="sport-card-front">
           <img
-            src="https://sports.api.decathlon.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBY3c9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cb60fb5bcf08e4676adace5cf677d12196bafe55/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lKTVRBeU5BWTZCa1ZVIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--0e36b4a54e8a5057a18945f67d3ad11a9ef22382/swimming.jpg"
+            src="https://sports-api-production.s3.amazonaws.com/uploads/sport/icon/224/224.svg"
             alt=""
             class="poster"
           />
@@ -25,25 +28,15 @@
           <h3 class="sport-card-header">Swimming</h3>
           <div class="description-box">
             <p class="description">What is it?</p>
-            <p class="description">Swimming includes several sports that are practiced on the surface and/or under the water. It allows you to use your whole body to move, sometimes in speed trials, sometimes in artistic routines, but requiring at all times a great coordination. Above all, thanks to the effect of gravity, swimming helps to minimize the impact of force on your body and joints, in addition to being a complete and very accessible sport that can easily allow you to feel like a fish in the water!\n</p>
+            <p class="description">Swimming includes several sports that are practiced on the surface and/or under the water. It allows you to use your whole body to move, sometimes in speed trials, sometimes in artistic routines, but requiring at all times a great coordination.</p>
           </div>
 
           <div class="types-box">
-            <p class="sport-subcategory">Different Ways of Swimming</p>
+            <p class="sport-subcategory">Different Ways</p>
             <p class="sport-subcategory">bathing,
                     swimming-pool,
                     triathlon,
-                    crawl,
-                    breaststroke,
-                    butterfly,
-                    backstroke,
-                    freestyle,
-                    open-water-swimming,
-                    marathon-swimming,
-                    synchronized-swimming,
-                    paralympic-swimming,
-                    aqualearning,
-                    competitive-swimming</p>
+                    </p>
           </div>
 
           <div class="sport-attributes">
@@ -52,7 +45,7 @@
             <li class="sport-geolocation">Coordinates</li>
           </div>
         </div>
-      </div> -->
+      </div>
     </section>
 
     <script src="js/index.js"></script>
