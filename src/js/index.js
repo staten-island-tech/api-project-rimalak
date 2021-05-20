@@ -10,7 +10,7 @@ const query = async function () {
   //const sports = data.data;
   try {
     data.forEach((sport) => {
-      if(data.attributes.name = null) 
+      ///if(data.attributes.name = null)
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
         `<div class="sport-card">
