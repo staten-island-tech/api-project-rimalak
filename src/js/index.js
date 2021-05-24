@@ -10,7 +10,6 @@ const query = async function () {
   //const sports = data.data;
   try {
     data.forEach((sport) => {
-      ///if(data.attributes.name = null)
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
         `<div class="sport-card">
@@ -45,6 +44,11 @@ const query = async function () {
           </div>
         </div>`
       );
+      /*if ((data.attributes.name = null)) {
+        data.attributes.name.innerHTML("Swimming is fun.");
+      }else{
+        data.attributes.name.innerHTML(${sport.attributes.name})
+      }*/
       console.log(sport);
     });
   } catch (error) {
