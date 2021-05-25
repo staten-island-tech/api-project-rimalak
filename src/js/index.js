@@ -10,15 +10,20 @@ const query = async function () {
   //const sports = data.data;
   try {
     data.forEach((sport) => {
-      const support = sport.attributes.name;
-      function avoidNull(support) {
-        if ((support = null)) {
-          support.innerHTML("Swimming is fun.");
-        } else {
-          support.innerHTML(sport.attributes.name);
-        }
-        return support;
+      //function avoidNull(stuff) {
+      //let support = DOMSelectors.support;
+      //let stuff = sport.attributes.description;
+      // }
+      if (sport === null) {
+        DOMSelectors.support.insertAdjacentHTML("Swimming is fun.");
+      } else {
+        DOMSelectors.support;
+        //.insertAdjacentHTML(
+        //`${sport.attributes.description}`
+        //);
       }
+      //return support
+
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
         `<div class="sport-card">
@@ -33,7 +38,7 @@ const query = async function () {
             <h3 class="sport-card-header">${sport.attributes.name}</h3>
             <div class="description-box">
               <p class="description">What is it?</p>
-              <p class="description">
+              <p class="description2">
                 ${sport.attributes.description}
               </p>
             </div>
