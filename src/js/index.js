@@ -14,14 +14,15 @@ const query = async function () {
       //let support = DOMSelectors.support;
       //let stuff = sport.attributes.description;
       // }
-      if (sport === null) {
-        DOMSelectors.support.insertAdjacentHTML("Swimming is fun.");
+      /*const stuff = DOMSelectors.support;
+      if (sport.attributes.description === null) {
+        console.log(stuff("Swimming is fun."));
       } else {
-        DOMSelectors.support;
-        //.insertAdjacentHTML(
-        //`${sport.attributes.description}`
-        //);
-      }
+        console.log(stuff);*/
+      //.insertAdjacentHTML(
+      //`${sport.attributes.description}`
+      //);
+
       //return support
 
       DOMSelectors.grid.insertAdjacentHTML(
@@ -29,7 +30,7 @@ const query = async function () {
         `<div class="sport-card">
           <div class="sport-card-front">
             <img
-              src="https://sports-api-production.s3.amazonaws.com/uploads/sport/icon/224/224.svg"
+              src="${sport.relationships.images.data}"
               alt=""
               class="poster"
             /> 
