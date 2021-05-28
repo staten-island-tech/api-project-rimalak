@@ -85,7 +85,6 @@ body {
   font-size: 1rem;
   padding: 1rem 2rem;
   display: flex;
-  width: 80%;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
@@ -108,10 +107,7 @@ body {
   list-style: none;
 }
 
-.description {
-  font-size: 1rem;
-}
-
+.description,
 .description2 {
   font-size: 1rem;
 }
