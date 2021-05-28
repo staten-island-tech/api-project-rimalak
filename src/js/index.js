@@ -8,6 +8,7 @@ const query = async function () {
   );
   const data = await response.json();
   //const sports = data.data;
+
   try {
     data.forEach((sport) => {
       //function avoidNull(stuff) {

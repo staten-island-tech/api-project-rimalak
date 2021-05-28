@@ -11,47 +11,32 @@ const listen = function () {
         `https://sports.api.decathlon.com/sports/${searchParams}`
       );
       const data = await response.json();
+      console.log(data);
       //const sports = data.data;
       try {
-        data.forEach((sport) => {
-          //function avoidNull(stuff) {
-          //let support = DOMSelectors.support;
-          //let stuff = sport.attributes.description;
-          // }
-          /*const stuff = DOMSelectors.support;
-                if (sport.attributes.description === null) {
-                  console.log(stuff("Swimming is fun."));
-                } else {
-                  console.log(stuff);*/
-          //.insertAdjacentHTML(
-          //`${sport.attributes.description}`
-          //);
-
-          //return support
-
-          DOMSelectors.grid.insertAdjacentHTML(
-            "beforeend",
-            `<div class="sport-card">
+        DOMSelectors.grid.insertAdjacentHTML(
+          "beforeend",
+          `<div class="sport-card">
                     <div class="sport-card-front">
                       <img
-                        src="${sport.relationships.images.data}"
+                        src="${data.data.relationships.images.data[0].url}"
                         alt=""
                         class="poster"
                       /> 
                     </div>
                     <div class="sport-card-back">
-                      <h3 class="sport-card-header">${sport.attributes.slug}</h3>
+                      <h3 class="sport-card-header">${data.data.attributes.slug}</h3>
                       <div class="description-box">
                         <p class="description">What is it?</p>
                         <p class="description2">
-                          ${sport.attributes.description}
+                          ${data.data.attributes.description}
                         </p>
                       </div>
           
                       <div class="types-box">
                         <p class="sport-subcategory">Different Ways</p>
                         <p class="sport-subcategory">
-                          ${sport.relationships.tags.data}
+                          ${data.data.relationships.tags.data}
                         </p>
                       </div>
           
@@ -62,9 +47,8 @@ const listen = function () {
                       </div>
                     </div>
                   </div>`
-          );
-          console.log(sport);
-        });
+        );
+        console.log(sport);
       } catch (error) {
         console.log(error);
         alert("Something got messed up.");
