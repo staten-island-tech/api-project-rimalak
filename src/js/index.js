@@ -10,13 +10,27 @@ const query = async function () {
   //const sports = data.data;
   try {
     data.forEach((sport) => {
-      ///if(data.attributes.name = null)
+      //function avoidNull(stuff) {
+      //let support = DOMSelectors.support;
+      //let stuff = sport.attributes.description;
+      // }
+      /*const stuff = DOMSelectors.support;
+      if (sport.attributes.description === null) {
+        console.log(stuff("Swimming is fun."));
+      } else {
+        console.log(stuff);*/
+      //.insertAdjacentHTML(
+      //`${sport.attributes.description}`
+      //);
+
+      //return support
+
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
         `<div class="sport-card">
           <div class="sport-card-front">
             <img
-              src="https://sports-api-production.s3.amazonaws.com/uploads/sport/icon/224/224.svg"
+              src="${sport.relationships.images.data}"
               alt=""
               class="poster"
             /> 
@@ -25,7 +39,7 @@ const query = async function () {
             <h3 class="sport-card-header">${sport.attributes.name}</h3>
             <div class="description-box">
               <p class="description">What is it?</p>
-              <p class="description">
+              <p class="description2">
                 ${sport.attributes.description}
               </p>
             </div>
