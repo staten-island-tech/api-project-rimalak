@@ -24,7 +24,7 @@ const query = async function () {
       //);
 
       //return support
-
+      //https://sports-api-production.s3.amazonaws.com/uploads/sport/icon/224/224.svg
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
         `<div class="sport-card">
