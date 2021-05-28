@@ -32,7 +32,7 @@ const query = async function () {
           <div class="sport-card-front">
             <img
               src="${sport.relationships.images.data[0].url}"
-              alt=""
+              alt="People playing different sports in the water."
               class="poster"
             /> 
           </div>
@@ -60,7 +60,7 @@ const query = async function () {
           </div>
         </div>`
       );
-      //console.log(sport);
+      console.log(sport);
     });
   } catch (error) {
     console.log(error);

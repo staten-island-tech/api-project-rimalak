@@ -11,7 +11,7 @@ const listen = function () {
         `https://sports.api.decathlon.com/sports/${searchParams}`
       );
       const data = await response.json();
-      console.log(data);
+      //console.log(data);
       //const sports = data.data;
       try {
         DOMSelectors.grid.insertAdjacentHTML(
@@ -48,7 +48,7 @@ const listen = function () {
                     </div>
                   </div>`
         );
-        console.log(sport);
+        //console.log(sport);
       } catch (error) {
         console.log(error);
         alert("Something got messed up.");
