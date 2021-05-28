@@ -12,7 +12,7 @@ body {
   font-weight: 500;
 }
 body {
-  background-color: rgb(183, 222, 235);
+  background-color: rgb(153, 217, 238);
 }
 
 .header {
@@ -30,7 +30,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 90vw;
-  background-color: #000;
+  background-color: linear gradient(#543595,#4A5FCB);
   margin: 1rem auto;
   padding: 3rem auto;
   align-items: center;
@@ -48,7 +48,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  /* background-image: url("https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg"); */
+  //comment out from down below if there's a problem
+  background-image: url("charles-deluvio-CBXJ6ljSDzM-unsplash (1).jpg"); 
   background-position: center;
   z-index: 3;
   transition: all 0.3s;
