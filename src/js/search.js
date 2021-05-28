@@ -8,7 +8,7 @@ const listen = function () {
     const searchQuery = async function () {
       //let id = 224;
       const response = await fetch(
-        `https://sports.api.decathlon.com/sports/search/${searchParams}`
+        `https://sports.api.decathlon.com/sports/${searchParams}`
       );
       const data = await response.json();
       //const sports = data.data;
@@ -40,7 +40,7 @@ const listen = function () {
                       /> 
                     </div>
                     <div class="sport-card-back">
-                      <h3 class="sport-card-header">${sport.attributes.name}</h3>
+                      <h3 class="sport-card-header">${sport.attributes.slug}</h3>
                       <div class="description-box">
                         <p class="description">What is it?</p>
                         <p class="description2">
