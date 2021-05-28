@@ -30,7 +30,7 @@ const query = async function () {
         `<div class="sport-card">
           <div class="sport-card-front">
             <img
-              src="${sport.relationships.images.data}"
+              src="${sport.relationships.images.data[0].url}"
               alt=""
               class="poster"
             /> 
@@ -59,7 +59,7 @@ const query = async function () {
           </div>
         </div>`
       );
-      console.log(sport);
+      //console.log(sport);
     });
   } catch (error) {
     console.log(error);
