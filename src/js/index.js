@@ -46,7 +46,7 @@ const query = async function () {
             </div>
 
             <div class="types-box">
-              <p class="sport-subcategory">Different Ways</p>
+              <p class="sport-subcategory">Different Types</p>
               <p class="sport-subcategory">
                 ${sport.relationships.tags.data}
               </p>
@@ -60,7 +60,7 @@ const query = async function () {
           </div>
         </div>`
       );
-      console.log(sport);
+      //console.log(sport);
     });
   } catch (error) {
     console.log(error);
